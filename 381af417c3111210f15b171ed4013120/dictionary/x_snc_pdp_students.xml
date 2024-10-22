@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9b9cbcd7c3111210f15b171ed4013180" label="Students" max_length="40" name="x_snc_pdp_students" type="collection">
+        <element attributes="encode_utf8=false" label="Responsible Trainer" max_length="32" name="responsible_trainer" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="encode_utf8=false" label="Student" max_length="32" name="student" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="responsible_trainer"/>
+        </index>
+        <index name="index2">
+            <element name="student"/>
+        </index>
+    </element>
+</database>
