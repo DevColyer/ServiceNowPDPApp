@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-22 13:16:56</sys_created_on>
+        <sys_id>65cf1957c3d11210f15b171ed40131de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_pdp_objectives.x_snc_pdp.pdp_student</sys_name>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_security_acl display_value="x_snc_pdp_objectives">bd5e95d3c3d11210f15b171ed40131f1</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_65cf1957c3d11210f15b171ed40131de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 13:16:56</sys_updated_on>
+        <sys_user_role display_value="x_snc_pdp.pdp_student" name="x_snc_pdp.pdp_student">346a3417c3111210f15b171ed401310c</sys_user_role>
+    </sys_security_acl_role>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</application>
+        <file_path/>
+        <instance_id>36f8ac821b560290e84d2f8dee4bcb85</instance_id>
+        <instance_name>dev272603</instance_name>
+        <name>sys_security_acl_role_65cf1957c3d11210f15b171ed40131de</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-22 13:16:56</sys_created_on>
+        <sys_id>65cf1957c3d11210f15b171ed40131de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_pdp_objectives.x_snc_pdp.pdp_student</sys_name>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_security_acl display_value="x_snc_pdp_objectives">bd5e95d3c3d11210f15b171ed40131f1</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_65cf1957c3d11210f15b171ed40131de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 13:16:56</sys_updated_on>
+        <sys_user_role display_value="x_snc_pdp.pdp_student" name="x_snc_pdp.pdp_student">346a3417c3111210f15b171ed401310c</sys_user_role>
+    </sys_security_acl_role>
+</record_update>]]></payload>
+        <payload_hash>-1877205215</payload_hash>
+        <record_name>x_snc_pdp_objectives.x_snc_pdp.pdp_student</record_name>
+        <reverted_from/>
+        <source>c9a7a6eb831d521008825930ceaad3ae</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 13:08:41</sys_created_on>
+        <sys_id>08b7aaeb831d521008825930ceaad3e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192b97e650e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 13:08:41</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>04b7aaebfd1d5210b3912a6b23e481e8</update_guid>
+        <update_guid_history>04b7aaebfd1d5210b3912a6b23e481e8:0,7687a2eb5d1d521004806bf5c8699dd2:-1067034076,d145619fa0d11210c615be2d6d1403a1:-1877205215</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_pdp_objectives.x_snc_pdp.pdp_student">775eae27835d521008825930ceaad349</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 13:37:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>2b59749365164455a503007a2d8ea2b9</sys_id>
+        <sys_metadata>65cf1957c3d11210f15b171ed40131de</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_pdp_objectives.x_snc_pdp.pdp_student</sys_name>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_parent display_value="x_snc_pdp_objectives">bd5e95d3c3d11210f15b171ed40131f1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_scope_delete display_value="">04ce840f634c49f089a912df505ad044</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_65cf1957c3d11210f15b171ed40131de</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_65cf1957c3d11210f15b171ed40131de">08b7aaeb831d521008825930ceaad3e8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 13:37:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
