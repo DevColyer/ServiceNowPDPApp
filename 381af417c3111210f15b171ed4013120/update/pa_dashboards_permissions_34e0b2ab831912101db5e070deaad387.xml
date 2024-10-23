@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
+    <pa_dashboards_permissions action="INSERT_OR_UPDATE">
+        <dashboard display_value="My PDP Objectives">f1944aef831512101db5e070deaad310</dashboard>
+        <delete>false</delete>
+        <group display_value="Students" name="Students">b9cf756b831512101db5e070deaad366</group>
+        <identity>b9cf756b831512101db5e070deaad366</identity>
+        <read>true</read>
+        <role/>
+        <sys_class_name>pa_dashboards_permissions</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 13:48:54</sys_created_on>
+        <sys_id>34e0b2ab831912101db5e070deaad387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b9cf756b831512101db5e070deaad366</sys_name>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_update_name>pa_dashboards_permissions_34e0b2ab831912101db5e070deaad387</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 13:48:54</sys_updated_on>
+        <type>2</type>
+        <user/>
+        <write>false</write>
+    </pa_dashboards_permissions>
+</record_update>
