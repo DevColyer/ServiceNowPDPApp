@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=971000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>48hr_until_deadline</internal_name>
+        <label_cache>[{"name":"8cc9c7e3-46b7-4934-910d-5a33350aada2.item.due_date","label":"2 - For Each➛PDP Tasks Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_pdp_tasks","column_name":"due_date","usedInstances":{"b29e1b57-6a84-46d7-93c8-163d34e17064":[null]}},{"name":"8cc9c7e3-46b7-4934-910d-5a33350aada2.item.assigned_to.first_name","label":"2 - For Each➛PDP Tasks Record➛Assigned to➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{"b29e1b57-6a84-46d7-93c8-163d34e17064":[null]}},{"name":"8cc9c7e3-46b7-4934-910d-5a33350aada2.item.short_description","label":"2 - For Each➛PDP Tasks Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_snc_pdp_tasks","column_name":"short_description","usedInstances":{"b29e1b57-6a84-46d7-93c8-163d34e17064":["ah_subject",null]}},{"name":"8cc9c7e3-46b7-4934-910d-5a33350aada2.item.assigned_to.email","label":"2 - For Each➛PDP Tasks Record➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"b29e1b57-6a84-46d7-93c8-163d34e17064":["ah_to"]}},{"name":"66450d5b-bce2-4beb-b116-f78b79e5d47e.Records","label":"1 - Look Up Records➛PDP Tasks Records","reference":"x_snc_pdp_tasks","reference_display":"PDP Tasks","type":"records","base_type":"records","usedInstances":{"8cc9c7e3-46b7-4934-910d-5a33350aada2":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Daily_1.run_start_time","label":"Trigger - Run Daily ➛Run Start Time UTC","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Daily_1.run_start_date_time","label":"Trigger - Run Daily ➛Run Start Date/Time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master_snapshot>317eb6eb835912101db5e070deaad37a</master_snapshot>
+        <name>48hr Until Deadline</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>4e7eb6eb835912101db5e070deaad3b0</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:32:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>60cabaa7835912101db5e070deaad368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>48hr Until Deadline</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_update_name>sys_hub_flow_60cabaa7835912101db5e070deaad368</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:50:49</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=60cabaa7835912101db5e070deaad368"/>
+    <sys_variable_value action="delete_multiple" query="document_key=60cabaa7835912101db5e070deaad368"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2024-10-23 14:48:14</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4e7eb6eb835912101db5e070deaad3b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:14</sys_updated_on>
+        <time>1970-01-01 08:00:00</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:4e7eb6eb835912101db5e070deaad3b0^sys_idNOT INc27eb6eb835912101db5e070deaad3b1"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:4e7eb6eb835912101db5e070deaad3b0</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2024-10-23 14:48:14</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('4e7eb6eb835912101db5e070deaad3b0');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:14</sys_created_on>
+        <sys_id>c27eb6eb835912101db5e070deaad3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:14</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">4e7eb6eb835912101db5e070deaad3b0</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=60cabaa7835912101db5e070deaad368"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=60cabaa7835912101db5e070deaad368^sys_idNOT IN907e76eb835912101db5e070deaad3ad"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="48hr Until Deadline">60cabaa7835912101db5e070deaad368</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:06</sys_created_on>
+        <sys_id>907e76eb835912101db5e070deaad3ad</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:14</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=907e76eb835912101db5e070deaad3ad"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>907e76eb835912101db5e070deaad3ad</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:06</sys_created_on>
+        <sys_id>dc7e76eb835912101db5e070deaad3ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:06</sys_updated_on>
+        <value>1970-01-01 00:00:00</value>
+        <variable display_value="Time">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_89142dc0c32222002841b63b12d3ae8a^id=907e76eb835912101db5e070deaad3ad"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=60cabaa7835912101db5e070deaad368"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=60cabaa7835912101db5e070deaad368^sys_idNOT IN6ccabaa7835912101db5e070deaad368"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>60cabaa7835912101db5e070deaad368</id>
+        <name>48hr Until Deadline</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:32:01</sys_created_on>
+        <sys_id>6ccabaa7835912101db5e070deaad368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:32:01</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6ccabaa7835912101db5e070deaad368"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=60cabaa7835912101db5e070deaad368"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=60cabaa7835912101db5e070deaad368"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=60cabaa7835912101db5e070deaad368"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=60cabaa7835912101db5e070deaad368^sys_idNOT IN9c7e76eb835912101db5e070deaad3b5,d47e76eb835912101db5e070deaad3c3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="48hr Until Deadline">60cabaa7835912101db5e070deaad368</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:07</sys_created_on>
+        <sys_id>9c7e76eb835912101db5e070deaad3b5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:14</sys_updated_on>
+        <ui_id>66450d5b-bce2-4beb-b116-f78b79e5d47e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9c7e76eb835912101db5e070deaad3b5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9c7e76eb835912101db5e070deaad3b5</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:07</sys_created_on>
+        <sys_id>1c7e76eb835912101db5e070deaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:07</sys_updated_on>
+        <value>x_snc_pdp_tasks</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=9c7e76eb835912101db5e070deaad3b5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9c7e76eb835912101db5e070deaad3b5^sys_idNOT IN987e76eb835912101db5e070deaad3b7"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>conditions</input_name>
+        <instance>9c7e76eb835912101db5e070deaad3b5</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"conditions":{"scriptActive":true,"script":"var twoDaysAhead \u003d new GlideDateTime();\ntwoDaysAhead.addDays(2);\n\nvar dueDate \u003d new GlideDateTime(currentRecord.due_date);\n\nreturn (dueDate.getLocalDate() \u003d\u003d twoDaysAhead.getLocalDate() \u0026\u0026 currentRecord.state !\u003d \u00272\u0027 \u0026\u0026 currentRecord.state !\u003d \u00273\u0027);"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:07</sys_created_on>
+        <sys_id>987e76eb835912101db5e070deaad3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:07</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9c7e76eb835912101db5e070deaad3b5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="48hr Until Deadline">60cabaa7835912101db5e070deaad368</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>8cc9c7e3-46b7-4934-910d-5a33350aada2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:07</sys_created_on>
+        <sys_id>d47e76eb835912101db5e070deaad3c3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:14</sys_updated_on>
+        <ui_id>b29e1b57-6a84-46d7-93c8-163d34e17064</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d47e76eb835912101db5e070deaad3c3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d47e76eb835912101db5e070deaad3c3</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:07</sys_created_on>
+        <sys_id>dc7e76eb835912101db5e070deaad3c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:07</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d47e76eb835912101db5e070deaad3c3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>d47e76eb835912101db5e070deaad3c3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:07</sys_created_on>
+        <sys_id>987e76eb835912101db5e070deaad3c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Hi &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:6e94adde-1315-4f47-93f8-02fd6c832cab}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:6e94adde-1315-4f47-93f8-02fd6c832cab}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="2 - For Each &amp;gt; PDP Tasks Record &amp;gt; Assigned to &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;2 - For Each&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_6e94adde-1315-4f47-93f8-02fd6c832cab" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Your task "&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:69b1787a-4094-4b0c-bbfe-468e58b7dddc}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:69b1787a-4094-4b0c-bbfe-468e58b7dddc}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="2 - For Each &amp;gt; PDP Tasks Record &amp;gt; Short description"&gt;&lt;span class="pill-start"&gt;2 - For Each&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Short description&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_69b1787a-4094-4b0c-bbfe-468e58b7dddc" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" is due on &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:0ce5c955-9da2-445d-bd67-8790a6867950}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:0ce5c955-9da2-445d-bd67-8790a6867950}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="2 - For Each &amp;gt; PDP Tasks Record &amp;gt; Due date"&gt;&lt;span class="pill-start"&gt;2 - For Each&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Due date&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_0ce5c955-9da2-445d-bd67-8790a6867950" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Please make sure to complete the task by then or extend the due date as necessary.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Kind Regards,&lt;br /&gt;Automated PDP Reminder&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>d47e76eb835912101db5e070deaad3c3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:07</sys_created_on>
+        <sys_id>5c7e76eb835912101db5e070deaad3c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>Your Task "{{8cc9c7e3-46b7-4934-910d-5a33350aada2.item.short_description}}" is Due Soon</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>d47e76eb835912101db5e070deaad3c3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:07</sys_created_on>
+        <sys_id>d47e76eb835912101db5e070deaad3c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{8cc9c7e3-46b7-4934-910d-5a33350aada2.item.assigned_to.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d47e76eb835912101db5e070deaad3c3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d47e76eb835912101db5e070deaad3c3"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=60cabaa7835912101db5e070deaad368"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=60cabaa7835912101db5e070deaad368^sys_idNOT IN5c7e76eb835912101db5e070deaad3b9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">907e76eb835912101db5e070deaad3b9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="48hr Until Deadline">60cabaa7835912101db5e070deaad368</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:07</sys_created_on>
+        <sys_id>5c7e76eb835912101db5e070deaad3b9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:14</sys_updated_on>
+        <ui_id>8cc9c7e3-46b7-4934-910d-5a33350aada2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5c7e76eb835912101db5e070deaad3b9"/>
+    <sys_element_mapping action="delete_multiple" query="id=5c7e76eb835912101db5e070deaad3b9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>5c7e76eb835912101db5e070deaad3b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:07</sys_created_on>
+        <sys_id>507e76eb835912101db5e070deaad3bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:07</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{66450d5b-bce2-4beb-b116-f78b79e5d47e.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5c7e76eb835912101db5e070deaad3b9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5c7e76eb835912101db5e070deaad3b9"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=60cabaa7835912101db5e070deaad368^sys_idNOT IN107e76eb835912101db5e070deaad3c8,5c7e76eb835912101db5e070deaad3c7,947e76eb835912101db5e070deaad3c7"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>60cabaa7835912101db5e070deaad368</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{8cc9c7e3-46b7-4934-910d-5a33350aada2.item.due_date}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:07</sys_created_on>
+        <sys_id>107e76eb835912101db5e070deaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:07</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0ce5c955-9da2-445d-bd67-8790a6867950</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>60cabaa7835912101db5e070deaad368</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{8cc9c7e3-46b7-4934-910d-5a33350aada2.item.short_description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:07</sys_created_on>
+        <sys_id>5c7e76eb835912101db5e070deaad3c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:07</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>69b1787a-4094-4b0c-bbfe-468e58b7dddc</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>60cabaa7835912101db5e070deaad368</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{8cc9c7e3-46b7-4934-910d-5a33350aada2.item.assigned_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:07</sys_created_on>
+        <sys_id>947e76eb835912101db5e070deaad3c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:07</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6e94adde-1315-4f47-93f8-02fd6c832cab</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=60cabaa7835912101db5e070deaad368"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_60cabaa7835912101db5e070deaad368"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_60cabaa7835912101db5e070deaad368"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_60cabaa7835912101db5e070deaad368"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_60cabaa7835912101db5e070deaad368"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>48hr_until_deadline</internal_name>
+        <label_cache>[{"name":"8cc9c7e3-46b7-4934-910d-5a33350aada2.item.due_date","label":"2 - For Each➛PDP Tasks Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_pdp_tasks","column_name":"due_date","usedInstances":{"b29e1b57-6a84-46d7-93c8-163d34e17064":[null]}},{"name":"8cc9c7e3-46b7-4934-910d-5a33350aada2.item.assigned_to.first_name","label":"2 - For Each➛PDP Tasks Record➛Assigned to➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{"b29e1b57-6a84-46d7-93c8-163d34e17064":[null]}},{"name":"8cc9c7e3-46b7-4934-910d-5a33350aada2.item.short_description","label":"2 - For Each➛PDP Tasks Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_snc_pdp_tasks","column_name":"short_description","usedInstances":{"b29e1b57-6a84-46d7-93c8-163d34e17064":["ah_subject",null]}},{"name":"8cc9c7e3-46b7-4934-910d-5a33350aada2.item.assigned_to.email","label":"2 - For Each➛PDP Tasks Record➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"b29e1b57-6a84-46d7-93c8-163d34e17064":["ah_to"]}},{"name":"66450d5b-bce2-4beb-b116-f78b79e5d47e.Records","label":"1 - Look Up Records➛PDP Tasks Records","reference":"x_snc_pdp_tasks","reference_display":"PDP Tasks","type":"records","base_type":"records","usedInstances":{"8cc9c7e3-46b7-4934-910d-5a33350aada2":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Daily_1.run_start_time","label":"Trigger - Run Daily ➛Run Start Time UTC","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Daily_1.run_start_date_time","label":"Trigger - Run Daily ➛Run Start Date/Time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master>true</master>
+        <name>48hr Until Deadline</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="48hr Until Deadline">60cabaa7835912101db5e070deaad368</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>317eb6eb835912101db5e070deaad37a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=317eb6eb835912101db5e070deaad37a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=317eb6eb835912101db5e070deaad37a"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=317eb6eb835912101db5e070deaad37a^sys_idNOT INf17eb6eb835912101db5e070deaad390"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="48hr Until Deadline">317eb6eb835912101db5e070deaad37a</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>f17eb6eb835912101db5e070deaad390</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:14</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f17eb6eb835912101db5e070deaad390"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f17eb6eb835912101db5e070deaad390</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>7d7eb6eb835912101db5e070deaad390</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <value>1970-01-01 00:00:00</value>
+        <variable display_value="Time">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_89142dc0c32222002841b63b12d3ae8a^id=f17eb6eb835912101db5e070deaad390"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=317eb6eb835912101db5e070deaad37a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=317eb6eb835912101db5e070deaad37a^sys_idNOT INbd7eb6eb835912101db5e070deaad37a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>317eb6eb835912101db5e070deaad37a</id>
+        <name>48hr Until Deadline</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>bd7eb6eb835912101db5e070deaad37a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=bd7eb6eb835912101db5e070deaad37a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=317eb6eb835912101db5e070deaad37a"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=317eb6eb835912101db5e070deaad37a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=317eb6eb835912101db5e070deaad37a"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=317eb6eb835912101db5e070deaad37a^sys_idNOT IN3d7eb6eb835912101db5e070deaad38d,757eb6eb835912101db5e070deaad386"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="48hr Until Deadline">317eb6eb835912101db5e070deaad37a</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>8cc9c7e3-46b7-4934-910d-5a33350aada2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>3d7eb6eb835912101db5e070deaad38d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <ui_id>b29e1b57-6a84-46d7-93c8-163d34e17064</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3d7eb6eb835912101db5e070deaad38d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3d7eb6eb835912101db5e070deaad38d</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>fd7eb6eb835912101db5e070deaad38f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3d7eb6eb835912101db5e070deaad38d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>3d7eb6eb835912101db5e070deaad38d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>b97eb6eb835912101db5e070deaad38f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Hi &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:6e94adde-1315-4f47-93f8-02fd6c832cab}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:6e94adde-1315-4f47-93f8-02fd6c832cab}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="2 - For Each &amp;gt; PDP Tasks Record &amp;gt; Assigned to &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;2 - For Each&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_6e94adde-1315-4f47-93f8-02fd6c832cab" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Your task "&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:69b1787a-4094-4b0c-bbfe-468e58b7dddc}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:69b1787a-4094-4b0c-bbfe-468e58b7dddc}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="2 - For Each &amp;gt; PDP Tasks Record &amp;gt; Short description"&gt;&lt;span class="pill-start"&gt;2 - For Each&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Short description&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_69b1787a-4094-4b0c-bbfe-468e58b7dddc" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" is due on &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:0ce5c955-9da2-445d-bd67-8790a6867950}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:0ce5c955-9da2-445d-bd67-8790a6867950}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="2 - For Each &amp;gt; PDP Tasks Record &amp;gt; Due date"&gt;&lt;span class="pill-start"&gt;2 - For Each&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Due date&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_0ce5c955-9da2-445d-bd67-8790a6867950" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Please make sure to complete the task by then or extend the due date as necessary.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Kind Regards,&lt;br /&gt;Automated PDP Reminder&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>3d7eb6eb835912101db5e070deaad38d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>7d7eb6eb835912101db5e070deaad38f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>Your Task "{{8cc9c7e3-46b7-4934-910d-5a33350aada2.item.short_description}}" is Due Soon</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>3d7eb6eb835912101db5e070deaad38d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>f57eb6eb835912101db5e070deaad38f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{8cc9c7e3-46b7-4934-910d-5a33350aada2.item.assigned_to.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3d7eb6eb835912101db5e070deaad38d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3d7eb6eb835912101db5e070deaad38d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="48hr Until Deadline">317eb6eb835912101db5e070deaad37a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>757eb6eb835912101db5e070deaad386</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <ui_id>66450d5b-bce2-4beb-b116-f78b79e5d47e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=757eb6eb835912101db5e070deaad386"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>757eb6eb835912101db5e070deaad386</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>fd7eb6eb835912101db5e070deaad387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <value>x_snc_pdp_tasks</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=757eb6eb835912101db5e070deaad386"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=757eb6eb835912101db5e070deaad386^sys_idNOT INb57eb6eb835912101db5e070deaad387"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>conditions</input_name>
+        <instance>757eb6eb835912101db5e070deaad386</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"conditions":{"scriptActive":true,"script":"var twoDaysAhead \u003d new GlideDateTime();\ntwoDaysAhead.addDays(2);\n\nvar dueDate \u003d new GlideDateTime(currentRecord.due_date);\n\nreturn (dueDate.getLocalDate() \u003d\u003d twoDaysAhead.getLocalDate() \u0026\u0026 currentRecord.state !\u003d \u00272\u0027 \u0026\u0026 currentRecord.state !\u003d \u00273\u0027);"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>b57eb6eb835912101db5e070deaad387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=757eb6eb835912101db5e070deaad386"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=317eb6eb835912101db5e070deaad37a"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=317eb6eb835912101db5e070deaad37a^sys_idNOT IN757eb6eb835912101db5e070deaad37e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">907e76eb835912101db5e070deaad3b9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="48hr Until Deadline">317eb6eb835912101db5e070deaad37a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>757eb6eb835912101db5e070deaad37e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <ui_id>8cc9c7e3-46b7-4934-910d-5a33350aada2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=757eb6eb835912101db5e070deaad37e"/>
+    <sys_element_mapping action="delete_multiple" query="id=757eb6eb835912101db5e070deaad37e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>757eb6eb835912101db5e070deaad37e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>f97eb6eb835912101db5e070deaad380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{66450d5b-bce2-4beb-b116-f78b79e5d47e.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=757eb6eb835912101db5e070deaad37e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=757eb6eb835912101db5e070deaad37e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=317eb6eb835912101db5e070deaad37a^sys_idNOT IN067eb6eb835912101db5e070deaad391,317eb6eb835912101db5e070deaad391,b17eb6eb835912101db5e070deaad391"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>317eb6eb835912101db5e070deaad37a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{8cc9c7e3-46b7-4934-910d-5a33350aada2.item.due_date}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>067eb6eb835912101db5e070deaad391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0ce5c955-9da2-445d-bd67-8790a6867950</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>317eb6eb835912101db5e070deaad37a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{8cc9c7e3-46b7-4934-910d-5a33350aada2.item.short_description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>317eb6eb835912101db5e070deaad391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>69b1787a-4094-4b0c-bbfe-468e58b7dddc</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>317eb6eb835912101db5e070deaad37a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{8cc9c7e3-46b7-4934-910d-5a33350aada2.item.assigned_to.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:13</sys_created_on>
+        <sys_id>b17eb6eb835912101db5e070deaad391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6e94adde-1315-4f47-93f8-02fd6c832cab</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=317eb6eb835912101db5e070deaad37a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_317eb6eb835912101db5e070deaad37a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_317eb6eb835912101db5e070deaad37a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_317eb6eb835912101db5e070deaad37a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_317eb6eb835912101db5e070deaad37a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>60cabaa7835912101db5e070deaad368</sys_id>
+        <latest_snapshot>317eb6eb835912101db5e070deaad37a</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=60cabaa7835912101db5e070deaad368^sys_idNOT IN8a7eb6eb835912101db5e070deaad3b3"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>60cabaa7835912101db5e070deaad368</plan_id>
+        <snapshot>317eb6eb835912101db5e070deaad37a</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 14:48:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8a7eb6eb835912101db5e070deaad3b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 14:48:14</sys_updated_on>
+        <trigger display_value="">4e7eb6eb835912101db5e070deaad3b0</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=60cabaa7835912101db5e070deaad368"/>
+</record_update>
