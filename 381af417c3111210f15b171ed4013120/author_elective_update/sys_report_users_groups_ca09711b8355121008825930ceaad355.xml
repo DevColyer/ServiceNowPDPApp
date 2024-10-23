@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="DELETE">
+        <group_id/>
+        <report_id display_value="Done">c8a679178355121008825930ceaad369</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-22 15:06:21</sys_created_on>
+        <sys_id>ca09711b8355121008825930ceaad355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>c8a679178355121008825930ceaad369</sys_name>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_update_name>sys_report_users_groups_ca09711b8355121008825930ceaad355</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 15:06:21</sys_updated_on>
+        <user_id display_value="Abel Tuter">62826bf03710200044e0bfc8bcbe5df1</user_id>
+    </sys_report_users_groups>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</application>
+        <file_path/>
+        <instance_id>36f8ac821b560290e84d2f8dee4bcb85</instance_id>
+        <instance_name>dev272603</instance_name>
+        <name>sys_report_users_groups_ca09711b8355121008825930ceaad355</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups"><sys_report_users_groups action="INSERT_OR_UPDATE"><group_id/><report_id display_value="Done">c8a679178355121008825930ceaad369</report_id><sys_class_name>sys_report_users_groups</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-22 15:06:21</sys_created_on><sys_id>ca09711b8355121008825930ceaad355</sys_id><sys_mod_count>0</sys_mod_count><sys_name>c8a679178355121008825930ceaad369</sys_name><sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package><sys_policy/><sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope><sys_update_name>sys_report_users_groups_ca09711b8355121008825930ceaad355</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-22 15:06:21</sys_updated_on><user_id display_value="Abel Tuter">62826bf03710200044e0bfc8bcbe5df1</user_id></sys_report_users_groups></record_update>]]></payload>
+        <payload_hash>-1651050155</payload_hash>
+        <record_name>c8a679178355121008825930ceaad369</record_name>
+        <reverted_from/>
+        <source>ef4e701f8311121008825930ceaad39c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-22 15:06:21</sys_created_on>
+        <sys_id>0609711b8355121008825930ceaad358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192b4c3c4cc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 15:06:21</sys_updated_on>
+        <type>Report Users and Groups</type>
+        <update_guid>0a09711b5a551210ae8b8724f6cfac57</update_guid>
+        <update_guid_history>0a09711b5a551210ae8b8724f6cfac57:-1651050155</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 10:30:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_report_users_groups">sys_report_users_groups</sys_db_object>
+        <sys_id>de9b6bf66a9c45ec8191f09c6fa678a4</sys_id>
+        <sys_metadata>ca09711b8355121008825930ceaad355</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>c8a679178355121008825930ceaad369</sys_name>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_parent display_value="Done">c8a679178355121008825930ceaad369</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_scope_delete display_value="">04ce840f634c49f089a912df505ad044</sys_scope_delete>
+        <sys_update_name>sys_report_users_groups_ca09711b8355121008825930ceaad355</sys_update_name>
+        <sys_update_version display_value="sys_report_users_groups_ca09711b8355121008825930ceaad355">0609711b8355121008825930ceaad358</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 10:30:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
