@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 13:22:42</sys_created_on>
-            <sys_id>6b41edd7c3d11210f15b171ed4013112</sys_id>
+            <sys_created_on>2024-10-23 11:13:22</sys_created_on>
+            <sys_id>e24d4aeb835512101db5e070deaad3ee</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pdp_objectives" sys_domain="global" view="Default view">9301e5d7c3d11210f15b171ed401311a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 13:22:42</sys_updated_on>
+            <sys_updated_on>2024-10-23 11:13:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>short_description</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 13:22:42</sys_created_on>
-            <sys_id>ef41edd7c3d11210f15b171ed4013112</sys_id>
+            <sys_created_on>2024-10-23 11:13:22</sys_created_on>
+            <sys_id>6a4d4aeb835512101db5e070deaad3ee</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pdp_objectives" sys_domain="global" view="Default view">9301e5d7c3d11210f15b171ed401311a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 13:22:42</sys_updated_on>
+            <sys_updated_on>2024-10-23 11:13:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 13:22:42</sys_created_on>
-            <sys_id>6741edd7c3d11210f15b171ed4013113</sys_id>
+            <sys_created_on>2024-10-23 11:13:22</sys_created_on>
+            <sys_id>ee4d4aeb835512101db5e070deaad3ee</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pdp_objectives" sys_domain="global" view="Default view">9301e5d7c3d11210f15b171ed401311a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 13:22:42</sys_updated_on>
+            <sys_updated_on>2024-10-23 11:13:22</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,41 +46,69 @@
             <element>due_date</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 13:22:42</sys_created_on>
-            <sys_id>eb41edd7c3d11210f15b171ed4013113</sys_id>
+            <sys_created_on>2024-10-23 11:13:22</sys_created_on>
+            <sys_id>664d4aeb835512101db5e070deaad3ef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pdp_objectives" sys_domain="global" view="Default view">9301e5d7c3d11210f15b171ed401311a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 13:22:42</sys_updated_on>
+            <sys_updated_on>2024-10-23 11:13:22</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-23 11:13:22</sys_created_on>
+            <sys_id>ea4d4aeb835512101db5e070deaad3ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pdp_objectives" sys_domain="global" view="Default view">9301e5d7c3d11210f15b171ed401311a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-23 11:13:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 13:22:42</sys_created_on>
-            <sys_id>6341edd7c3d11210f15b171ed4013114</sys_id>
+            <sys_created_on>2024-10-23 11:13:22</sys_created_on>
+            <sys_id>624d4aeb835512101db5e070deaad3f0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pdp_objectives" sys_domain="global" view="Default view">9301e5d7c3d11210f15b171ed401311a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 13:22:42</sys_updated_on>
+            <sys_updated_on>2024-10-23 11:13:22</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description</element>
-            <position>5</position>
+            <element>assigned_to</element>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 13:22:42</sys_created_on>
-            <sys_id>e741edd7c3d11210f15b171ed4013114</sys_id>
+            <sys_created_on>2024-10-23 11:13:22</sys_created_on>
+            <sys_id>e64d4aeb835512101db5e070deaad3f0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pdp_objectives" sys_domain="global" view="Default view">9301e5d7c3d11210f15b171ed401311a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 13:22:42</sys_updated_on>
+            <sys_updated_on>2024-10-23 11:13:22</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-23 11:13:22</sys_created_on>
+            <sys_id>6e4d4aeb835512101db5e070deaad3f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pdp_objectives" sys_domain="global" view="Default view">9301e5d7c3d11210f15b171ed401311a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-23 11:13:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

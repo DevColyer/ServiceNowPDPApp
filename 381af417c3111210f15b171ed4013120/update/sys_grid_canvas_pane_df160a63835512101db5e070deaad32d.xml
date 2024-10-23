@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="New Tab 1">03b40eef831512101db5e070deaad305</grid_canvas>
+        <height>14</height>
+        <portal_widget display_value="">df160a63835512101db5e070deaad328</portal_widget>
+        <posx>0</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 10:42:00</sys_created_on>
+        <sys_id>df160a63835512101db5e070deaad32d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>03b40eef831512101db5e070deaad305</sys_name>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_df160a63835512101db5e070deaad32d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 10:43:00</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+</record_update>
