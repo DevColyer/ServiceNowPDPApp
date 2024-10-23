@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
+        <dashboard display_value="My PDP Tasks">fb90791f8315121008825930ceaad36b</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>1</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-22 14:29:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2aa0b91f8315121008825930ceaad37d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>fb90791f8315121008825930ceaad36b</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_2aa0b91f8315121008825930ceaad37d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 14:29:48</sys_updated_on>
+        <tab display_value="New Tab 1">96a0791f8315121008825930ceaad37b</tab>
+    </pa_m2m_dashboard_tabs>
+</record_update>
