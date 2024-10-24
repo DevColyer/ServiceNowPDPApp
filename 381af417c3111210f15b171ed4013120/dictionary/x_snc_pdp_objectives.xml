@@ -8,9 +8,9 @@
         <element choice="3" default="To-Do" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="To-Do" sequence="0" value="To-Do"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="In Progress"/>
                 <element inactive_on_update="false" label="Done" sequence="2" value="Done"/>
                 <element inactive_on_update="false" label="Dropped" sequence="3" value="Dropped"/>
-                <element inactive_on_update="false" label="In Progress" sequence="1" value="In Progress"/>
             </choice>
         </element>
         <index name="index">

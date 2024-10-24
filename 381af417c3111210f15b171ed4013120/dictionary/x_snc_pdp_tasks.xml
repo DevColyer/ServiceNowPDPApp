@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="7ccb7c97c3111210f15b171ed4013141" extends="task" label="PDP Tasks" max_length="40" name="x_snc_pdp_tasks" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Responsible Trainer" max_length="32" name="responsible_trainer" read_only="true" reference="sys_user" type="reference"/>
         <element display="true" label="Parent Objective" mandatory="true" max_length="32" name="parent_objective" reference="x_snc_pdp_objectives" type="reference"/>
     </element>
 </database>

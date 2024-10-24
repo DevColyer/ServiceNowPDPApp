@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_source">
+    <sys_data_source action="DELETE">
+        <batch_size>1000</batch_size>
+        <category/>
+        <connection_override_last_success_time/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url/>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <data_in_single_column>false</data_in_single_column>
+        <data_loader><![CDATA[(function() {
+	var currUserID = gs.getUserID();
+	var myStudentIDs = [];
+
+	var studentGR = new GlideRecord('x_snc_pdp_students');
+	studentGR.addQuery('responsible_trainer', currUserID);
+	studentGR.query();
+
+	while (studentGR.next()) {
+		myStudentIDs.push(studentGR.student.toString());
+	}
+
+    var tasks = [];
+    
+    if (myStudentIDs.length > 0) {
+        var taskGR = new GlideRecord('x_snc_pdp_tasks');
+        taskGR.addQuery('assigned_to', 'IN', myStudentIDs);
+        taskGR.query();
+        
+        while (taskGR.next()) {
+            tasks.push({
+                task_number: taskGR.number.toString(),
+                task_short_description: taskGR.short_description.toString(),
+                task_due_date: taskGR.due_date.toString(),
+                task_state: taskGR.state.getDisplayValue(),
+                task_assigned_to: taskGR.assigned_to.getDisplayValue(),
+                responsible_trainer: studentGR.responsible_trainer.getDisplayValue()  // Include the trainer for reference
+            });
+        }
+    }
+
+	return tasks;
+});]]></data_loader>
+        <database_name/>
+        <database_port/>
+        <discard_arrays>true</discard_arrays>
+        <enable_parallel_loading>false</enable_parallel_loading>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>CSV</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>Tasks by Trainer</import_set_table_label>
+        <import_set_table_name>x_snc_pdp_tasks_by_trainer</import_set_table_name>
+        <instance_name/>
+        <jdbc_password/>
+        <jdbc_server/>
+        <jdbc_user_name/>
+        <jpath_root_node/>
+        <last_run_database_field/>
+        <last_run_datetime/>
+        <last_success_import_time/>
+        <ldap_target/>
+        <ldapprobe_result_set_rows>200</ldapprobe_result_set_rows>
+        <limit/>
+        <maximum_rows/>
+        <mid_server/>
+        <name>Tasks by Trainer</name>
+        <offset>0</offset>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <parallel_loading_script><![CDATA[(function loadTasks(parallel_job_loader, data_source, import_log, last_success_import_time) {
+
+	// Invoke third party API, create partitions and insert partitions info in parallel job table
+
+})(parallel_job_loader, data_source, import_log, last_success_import_time);]]></parallel_loading_script>
+        <parsing_script><![CDATA[// The input value can be accessed through the variables named "line", "lineNumber" and "result"
+// The function uses result variable to return parse result back. 
+(function(line,lineNumber,result) {
+	// add code here
+})(line,lineNumber,result);]]></parsing_script>
+        <properties/>
+        <query>All Rows from Table</query>
+        <query_timeout>0</query_timeout>
+        <request_action/>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_name>1</sheet_name>
+        <sheet_number>1</sheet_number>
+        <sql_statement/>
+        <ssh_keyfile_path/>
+        <support_pagination>false</support_pagination>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 14:23:33</sys_created_on>
+        <sys_id>d6eb37f3839512101db5e070deaad3ff</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Tasks by Trainer</sys_name>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_update_name>sys_data_source_d6eb37f3839512101db5e070deaad3ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 14:24:41</sys_updated_on>
+        <table_name/>
+        <type>CUSTOM</type>
+        <use_batch_import>false</use_batch_import>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</application>
+        <file_path/>
+        <instance_id>e768928febe34ed0cbbffceacad0cd08</instance_id>
+        <instance_name>dev279430</instance_name>
+        <name>sys_data_source_d6eb37f3839512101db5e070deaad3ff</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_data_source"&gt;&lt;sys_data_source action="INSERT_OR_UPDATE"&gt;&lt;batch_size&gt;1000&lt;/batch_size&gt;&lt;category/&gt;&lt;connection_override_last_success_time/&gt;&lt;connection_timeout&gt;0&lt;/connection_timeout&gt;&lt;connection_url/&gt;&lt;connection_url_parameters/&gt;&lt;csv_delimiter/&gt;&lt;data_in_single_column&gt;false&lt;/data_in_single_column&gt;&lt;data_loader&gt;&lt;![CDATA[(function() {
+	var currUserID = gs.getUserID();
+	var myStudentIDs = [];
+
+	var studentGR = new GlideRecord('x_snc_pdp_students');
+	studentGR.addQuery('responsible_trainer', currUserID);
+	studentGR.query();
+
+	while (studentGR.next()) {
+		myStudentIDs.push(studentGR.student.toString());
+	}
+
+    var tasks = [];
+    
+    if (myStudentIDs.length &gt; 0) {
+        var taskGR = new GlideRecord('x_snc_pdp_tasks');
+        taskGR.addQuery('assigned_to', 'IN', myStudentIDs);
+        taskGR.query();
+        
+        while (taskGR.next()) {
+            tasks.push({
+                task_number: taskGR.number.toString(),
+                task_short_description: taskGR.short_description.toString(),
+                task_due_date: taskGR.due_date.toString(),
+                task_state: taskGR.state.getDisplayValue(),
+                task_assigned_to: taskGR.assigned_to.getDisplayValue(),
+                responsible_trainer: studentGR.responsible_trainer.getDisplayValue()  // Include the trainer for reference
+            });
+        }
+    }
+
+	return tasks;
+});]]&gt;&lt;/data_loader&gt;&lt;database_name/&gt;&lt;database_port/&gt;&lt;discard_arrays&gt;true&lt;/discard_arrays&gt;&lt;enable_parallel_loading&gt;false&lt;/enable_parallel_loading&gt;&lt;expand_node_children&gt;false&lt;/expand_node_children&gt;&lt;file_path/&gt;&lt;file_retrieval_method&gt;Attachment&lt;/file_retrieval_method&gt;&lt;format&gt;CSV&lt;/format&gt;&lt;glide_keystore&gt;false&lt;/glide_keystore&gt;&lt;header_row&gt;0&lt;/header_row&gt;&lt;import_set_table_label&gt;Tasks by Trainer&lt;/import_set_table_label&gt;&lt;import_set_table_name&gt;x_snc_pdp_tasks_by_trainer&lt;/import_set_table_name&gt;&lt;instance_name/&gt;&lt;jdbc_password/&gt;&lt;jdbc_server/&gt;&lt;jdbc_user_name/&gt;&lt;jpath_root_node/&gt;&lt;last_run_database_field/&gt;&lt;last_run_datetime/&gt;&lt;last_success_import_time/&gt;&lt;ldap_target/&gt;&lt;ldapprobe_result_set_rows&gt;200&lt;/ldapprobe_result_set_rows&gt;&lt;limit/&gt;&lt;maximum_rows/&gt;&lt;mid_server/&gt;&lt;name&gt;Tasks by Trainer&lt;/name&gt;&lt;offset&gt;0&lt;/offset&gt;&lt;oracle_port&gt;1521&lt;/oracle_port&gt;&lt;oracle_sid&gt;orcl&lt;/oracle_sid&gt;&lt;parallel_loading_script&gt;&lt;![CDATA[(function loadTasks(parallel_job_loader, data_source, import_log, last_success_import_time) {
+
+	// Invoke third party API, create partitions and insert partitions info in parallel job table
+
+})(parallel_job_loader, data_source, import_log, last_success_import_time);]]&gt;&lt;/parallel_loading_script&gt;&lt;parsing_script&gt;&lt;![CDATA[// The input value can be accessed through the variables named "line", "lineNumber" and "result"
+// The function uses result variable to return parse result back. 
+(function(line,lineNumber,result) {
+	// add code here
+})(line,lineNumber,result);]]&gt;&lt;/parsing_script&gt;&lt;properties/&gt;&lt;query&gt;All Rows from Table&lt;/query&gt;&lt;query_timeout&gt;0&lt;/query_timeout&gt;&lt;request_action/&gt;&lt;scp_authentication&gt;Username and Password&lt;/scp_authentication&gt;&lt;scp_password/&gt;&lt;scp_port/&gt;&lt;scp_server/&gt;&lt;scp_user_name/&gt;&lt;sheet_name&gt;1&lt;/sheet_name&gt;&lt;sheet_number&gt;1&lt;/sheet_number&gt;&lt;sql_statement/&gt;&lt;ssh_keyfile_path/&gt;&lt;support_pagination&gt;false&lt;/support_pagination&gt;&lt;sys_class_name&gt;sys_data_source&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-24 14:23:33&lt;/sys_created_on&gt;&lt;sys_id&gt;d6eb37f3839512101db5e070deaad3ff&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Tasks by Trainer&lt;/sys_name&gt;&lt;sys_package display_value="Personal Development Planner" source="x_snc_pdp"&gt;381af417c3111210f15b171ed4013120&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Personal Development Planner"&gt;381af417c3111210f15b171ed4013120&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_data_source_d6eb37f3839512101db5e070deaad3ff&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-24 14:24:41&lt;/sys_updated_on&gt;&lt;table_name/&gt;&lt;type&gt;CUSTOM&lt;/type&gt;&lt;use_batch_import&gt;false&lt;/use_batch_import&gt;&lt;use_integrated_authentication&gt;false&lt;/use_integrated_authentication&gt;&lt;use_last_run_datetime&gt;false&lt;/use_last_run_datetime&gt;&lt;xpath_root_node/&gt;&lt;zipped&gt;false&lt;/zipped&gt;&lt;/sys_data_source&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1325983265</payload_hash>
+        <record_name>Tasks by Trainer</record_name>
+        <reverted_from/>
+        <source>d20fb1e7831512101db5e070deaad395</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 14:24:41</sys_created_on>
+        <sys_id>c7a2c8c883a512101db5e070deaad385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192beea56370000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 14:24:41</sys_updated_on>
+        <type>Data Source</type>
+        <update_guid>4fa2c8c8eaa5121040eb1c3e196a9284</update_guid>
+        <update_guid_history>4fa2c8c8eaa5121040eb1c3e196a9284:1325983265,81820448f0a51210579fc0748eec24a6:-2077021483,526244c8ffa51210bc41e5d1e8a1bd80:-973740919</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 14:35:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_data_source">sys_data_source</sys_db_object>
+        <sys_id>b6629bd0aece4d78a0a20ca2d0ae5804</sys_id>
+        <sys_metadata>d6eb37f3839512101db5e070deaad3ff</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tasks by Trainer</sys_name>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_scope_delete display_value="">04ce840f634c49f089a912df505ad044</sys_scope_delete>
+        <sys_update_name>sys_data_source_d6eb37f3839512101db5e070deaad3ff</sys_update_name>
+        <sys_update_version display_value="sys_data_source_d6eb37f3839512101db5e070deaad3ff">c7a2c8c883a512101db5e070deaad385</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 14:35:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
