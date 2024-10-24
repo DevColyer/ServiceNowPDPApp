@@ -41,7 +41,7 @@
         <update_guid_history>3becb41bc1111210500306182ee6725d:-900300037</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_snc_pdp_objectives.x_snc_pdp.resourcing">992d1d53c3d11210f15b171ed4013119</sys_audit_delete>
+        <sys_audit_delete display_value="">992d1d53c3d11210f15b171ed4013119</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-22 13:04:31</sys_created_on>

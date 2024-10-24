@@ -45,7 +45,7 @@
         <reverted_from/>
         <source>c9a7a6eb831d521008825930ceaad3ae</source>
         <source_table>sys_upgrade_history</source_table>
-        <state>current</state>
+        <state>previous</state>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-23 13:08:41</sys_created_on>
         <sys_id>08b7aaeb831d521008825930ceaad3e8</sys_id>
@@ -58,7 +58,7 @@
         <update_guid_history>04b7aaebfd1d5210b3912a6b23e481e8:0,7687a2eb5d1d521004806bf5c8699dd2:-1067034076,d145619fa0d11210c615be2d6d1403a1:-1877205215</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_snc_pdp_objectives.x_snc_pdp.pdp_student">775eae27835d521008825930ceaad349</sys_audit_delete>
+        <sys_audit_delete display_value="">775eae27835d521008825930ceaad349</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-23 13:37:53</sys_created_on>

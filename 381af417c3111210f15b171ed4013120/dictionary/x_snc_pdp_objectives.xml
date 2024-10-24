@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="6c3d9d53c3d11210f15b171ed40131c5" label="PDP Objectives" max_length="40" name="x_snc_pdp_objectives" type="collection">
+        <element label="Due Date" mandatory="true" max_length="40" name="due_date" type="glide_date"/>
         <element label="Description" max_length="4000" name="description" type="string"/>
-        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
         <element display="true" label="Short Description" mandatory="true" max_length="160" name="short_description" type="string"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Assigned To" mandatory="true" max_length="32" name="assigned_to" reference="sys_user" reference_qual="roles=x_snc_pdp.pdp_student^EQ" reference_qual_condition="roles=x_snc_pdp.pdp_student^EQ" type="reference"/>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
         <element choice="3" default="To-Do" label="State" max_length="40" name="state" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Dropped" sequence="3" value="Dropped"/>
-                <element inactive_on_update="false" label="In Progress" sequence="1" value="In Progress"/>
                 <element inactive_on_update="false" label="To-Do" sequence="0" value="To-Do"/>
                 <element inactive_on_update="false" label="Done" sequence="2" value="Done"/>
+                <element inactive_on_update="false" label="Dropped" sequence="3" value="Dropped"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="In Progress"/>
             </choice>
         </element>
-        <element label="Due Date" mandatory="true" max_length="40" name="due_date" type="glide_date"/>
         <index name="index">
             <element name="assigned_to"/>
         </index>
