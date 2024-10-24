@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=971000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=68174000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>25000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -43,7 +43,7 @@
         <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
         <sys_update_name>sys_hub_flow_60cabaa7835912101db5e070deaad368</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-23 14:50:49</sys_updated_on>
+        <sys_updated_on>2024-10-24 09:42:44</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=60cabaa7835912101db5e070deaad368"/>
@@ -116,10 +116,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-23 14:48:06</sys_created_on>
         <sys_id>907e76eb835912101db5e070deaad3ad</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-23 14:48:14</sys_updated_on>
+        <sys_updated_on>2024-10-24 09:28:17</sys_updated_on>
         <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -174,10 +174,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-23 14:48:07</sys_created_on>
         <sys_id>9c7e76eb835912101db5e070deaad3b5</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-23 14:48:14</sys_updated_on>
+        <sys_updated_on>2024-10-24 09:28:17</sys_updated_on>
         <ui_id>66450d5b-bce2-4beb-b116-f78b79e5d47e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9c7e76eb835912101db5e070deaad3b5"/>
@@ -202,13 +202,13 @@
         <input_name>conditions</input_name>
         <instance>9c7e76eb835912101db5e070deaad3b5</instance>
         <referenced_table>sys_hub_action_instance</referenced_table>
-        <script>{"conditions":{"scriptActive":true,"script":"var twoDaysAhead \u003d new GlideDateTime();\ntwoDaysAhead.addDays(2);\n\nvar dueDate \u003d new GlideDateTime(currentRecord.due_date);\n\nreturn (dueDate.getLocalDate() \u003d\u003d twoDaysAhead.getLocalDate() \u0026\u0026 currentRecord.state !\u003d \u00272\u0027 \u0026\u0026 currentRecord.state !\u003d \u00273\u0027);"}}</script>
+        <script>{"conditions":{"scriptActive":true,"script":"if (current \u0026\u0026 current.due_date !\u003d \u0027\u0027 \u0026\u0026 current.assigned_to !\u003d \u0027\u0027) {\n    var twoDaysAhead \u003d new GlideDateTime();\n    twoDaysAhead.addDaysLocalTime(2);\n\n    var dueDate \u003d new GlideDateTime(current.due_date);\n\n    gs.info(\"Due date: \" + dueDate.getLocalDate());\n    gs.info(\"Two days ahead: \" + twoDaysAhead.getLocalDate());\n\n    var dueDateIsTwoDaysAheadAndNotDoneOrSkipped \u003d dueDate.getLocalDate() \u003d\u003d\u003d twoDaysAhead.getLocalDate() \u0026\u0026 current.state !\u003d \u00272\u0027 \u0026\u0026 current.state !\u003d \u00273\u0027;\n\n    if (dueDateIsTwoDaysAheadAndNotDoneOrSkipped) {\n        return current.sys_id;\n    }\n}"}}</script>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-23 14:48:07</sys_created_on>
         <sys_id>987e76eb835912101db5e070deaad3b7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-23 14:48:07</sys_updated_on>
+        <sys_updated_on>2024-10-24 09:28:08</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=9c7e76eb835912101db5e070deaad3b5"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
@@ -227,10 +227,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-23 14:48:07</sys_created_on>
         <sys_id>d47e76eb835912101db5e070deaad3c3</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-23 14:48:14</sys_updated_on>
+        <sys_updated_on>2024-10-24 09:28:17</sys_updated_on>
         <ui_id>b29e1b57-6a84-46d7-93c8-163d34e17064</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d47e76eb835912101db5e070deaad3c3"/>
@@ -318,10 +318,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-23 14:48:07</sys_created_on>
         <sys_id>5c7e76eb835912101db5e070deaad3b9</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-23 14:48:14</sys_updated_on>
+        <sys_updated_on>2024-10-24 09:28:17</sys_updated_on>
         <ui_id>8cc9c7e3-46b7-4934-910d-5a33350aada2</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -430,7 +430,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>317eb6eb835912101db5e070deaad37a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -438,7 +438,7 @@
         <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <sys_updated_on>2024-10-24 09:28:16</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=317eb6eb835912101db5e070deaad37a"/>
@@ -453,10 +453,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-23 14:48:13</sys_created_on>
         <sys_id>f17eb6eb835912101db5e070deaad390</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-23 14:48:14</sys_updated_on>
+        <sys_updated_on>2024-10-24 09:28:17</sys_updated_on>
         <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -512,10 +512,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-23 14:48:13</sys_created_on>
         <sys_id>3d7eb6eb835912101db5e070deaad38d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <sys_updated_on>2024-10-24 09:28:16</sys_updated_on>
         <ui_id>b29e1b57-6a84-46d7-93c8-163d34e17064</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3d7eb6eb835912101db5e070deaad38d"/>
@@ -592,10 +592,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-23 14:48:13</sys_created_on>
         <sys_id>757eb6eb835912101db5e070deaad386</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <sys_updated_on>2024-10-24 09:28:16</sys_updated_on>
         <ui_id>66450d5b-bce2-4beb-b116-f78b79e5d47e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=757eb6eb835912101db5e070deaad386"/>
@@ -620,13 +620,13 @@
         <input_name>conditions</input_name>
         <instance>757eb6eb835912101db5e070deaad386</instance>
         <referenced_table>sys_hub_action_instance</referenced_table>
-        <script>{"conditions":{"scriptActive":true,"script":"var twoDaysAhead \u003d new GlideDateTime();\ntwoDaysAhead.addDays(2);\n\nvar dueDate \u003d new GlideDateTime(currentRecord.due_date);\n\nreturn (dueDate.getLocalDate() \u003d\u003d twoDaysAhead.getLocalDate() \u0026\u0026 currentRecord.state !\u003d \u00272\u0027 \u0026\u0026 currentRecord.state !\u003d \u00273\u0027);"}}</script>
+        <script>{"conditions":{"scriptActive":true,"script":"if (current \u0026\u0026 current.due_date !\u003d \u0027\u0027 \u0026\u0026 current.assigned_to !\u003d \u0027\u0027) {\n    var twoDaysAhead \u003d new GlideDateTime();\n    twoDaysAhead.addDaysLocalTime(2);\n\n    var dueDate \u003d new GlideDateTime(current.due_date);\n\n    gs.info(\"Due date: \" + dueDate.getLocalDate());\n    gs.info(\"Two days ahead: \" + twoDaysAhead.getLocalDate());\n\n    var dueDateIsTwoDaysAheadAndNotDoneOrSkipped \u003d dueDate.getLocalDate() \u003d\u003d\u003d twoDaysAhead.getLocalDate() \u0026\u0026 current.state !\u003d \u00272\u0027 \u0026\u0026 current.state !\u003d \u00273\u0027;\n\n    if (dueDateIsTwoDaysAheadAndNotDoneOrSkipped) {\n        return current.sys_id;\n    }\n}"}}</script>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-23 14:48:13</sys_created_on>
         <sys_id>b57eb6eb835912101db5e070deaad387</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <sys_updated_on>2024-10-24 09:28:16</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=757eb6eb835912101db5e070deaad386"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=317eb6eb835912101db5e070deaad37a"/>
@@ -655,10 +655,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-23 14:48:13</sys_created_on>
         <sys_id>757eb6eb835912101db5e070deaad37e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-23 14:48:13</sys_updated_on>
+        <sys_updated_on>2024-10-24 09:28:16</sys_updated_on>
         <ui_id>8cc9c7e3-46b7-4934-910d-5a33350aada2</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
