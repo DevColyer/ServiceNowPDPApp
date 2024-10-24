@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <condition/>
+        <description>Allow read on records in x_snc_pdp_objectives for users with the pdp_trainer role, provided that the records are assigned to their students.</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_snc_pdp_objectives</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[(function() {
+    try {
+        var students = new GlideRecord("x_snc_pdp_students");
+		gs.info("Looking for student with ID " + current.getValue("assigned_to"));
+        students.addQuery("student", current.getValue("assigned_to"));
+		students.setLimit(1);
+        students.query();
+
+        if (students.next()) {
+			gs.info("Found student with trainer " + students.getValue("responsible_trainer"));
+            if (students.getValue("responsible_trainer") === gs.getUserID()) {
+                return true;
+            }
+        }
+        return false;
+    } catch (err) {
+        gs.error("Error in Read Objectives (Trainer): " + err);
+    }
+})(current);]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 12:40:10</sys_created_on>
+        <sys_id>88ca2fff8355d21008825930ceaad3e5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_snc_pdp_objectives</sys_name>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_update_name>sys_security_acl_88ca2fff8355d21008825930ceaad3e5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 12:44:31</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>
