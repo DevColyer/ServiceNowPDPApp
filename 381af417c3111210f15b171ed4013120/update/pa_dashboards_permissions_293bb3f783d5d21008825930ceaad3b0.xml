@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
+    <pa_dashboards_permissions action="INSERT_OR_UPDATE">
+        <dashboard display_value="Resourcing PDP Overview">c60bbfb783d5d21008825930ceaad3ad</dashboard>
+        <delete>false</delete>
+        <group display_value="Resourcing" name="Resourcing">c4e08e6b831512101db5e070deaad316</group>
+        <identity>c4e08e6b831512101db5e070deaad316</identity>
+        <read>true</read>
+        <role/>
+        <sys_class_name>pa_dashboards_permissions</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 13:52:05</sys_created_on>
+        <sys_id>293bb3f783d5d21008825930ceaad3b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>c4e08e6b831512101db5e070deaad316</sys_name>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_update_name>pa_dashboards_permissions_293bb3f783d5d21008825930ceaad3b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 13:52:05</sys_updated_on>
+        <type>2</type>
+        <user/>
+        <write>true</write>
+    </pa_dashboards_permissions>
+</record_update>
