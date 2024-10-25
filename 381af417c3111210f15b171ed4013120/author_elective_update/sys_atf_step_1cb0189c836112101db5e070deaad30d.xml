@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Insert a record into 'x_snc_pdp_tasks' with the following values:
+Due date = 2124-10-25 00:00:00
+and Short description = My First Task
+and Assigned to = {{Step 4: Impersonate.User}}
+and State = In Progress
+and Parent Objective = {{Step 5: Record Query.First record}}
+Confirm the record was successfully inserted</description>
+        <display_name>Record Insert</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>8</order>
+        <step_config display_value="Record Insert">14872288df60220062fe6c7a4df26319</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 10:06:46</sys_created_on>
+        <sys_id>1cb0189c836112101db5e070deaad30d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Record Insert</sys_name>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_update_name>sys_atf_step_1cb0189c836112101db5e070deaad30d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 10:13:15</sys_updated_on>
+        <table>x_snc_pdp_tasks</table>
+        <test display_value="Create Task Test">11ee841c836112101db5e070deaad358</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=1cb0189c836112101db5e070deaad30d"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>1cb0189c836112101db5e070deaad30d</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 10:06:46</sys_created_on>
+        <sys_id>26311c9c836112101db5e070deaad363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 10:06:46</sys_updated_on>
+        <value>x_snc_pdp_tasks</value>
+        <variable display_value="Table">90144b535320220002c6435723dc3488</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>1cb0189c836112101db5e070deaad30d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 10:06:46</sys_created_on>
+        <sys_id>62311c9c836112101db5e070deaad363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 10:06:46</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enforce security">e6e3c7535320220002c6435723dc3496</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>1cb0189c836112101db5e070deaad30d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 10:06:46</sys_created_on>
+        <sys_id>ae311c9c836112101db5e070deaad362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 10:06:46</sys_updated_on>
+        <value>record_successfully_inserted</value>
+        <variable display_value="Assert type">9024a37f671003007ba405225685efe5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>1cb0189c836112101db5e070deaad30d</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 10:06:46</sys_created_on>
+        <sys_id>e6311c9c836112101db5e070deaad363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 10:06:46</sys_updated_on>
+        <value>due_date=2124-10-25 00:00:00^short_description=My First Task^assigned_to={{step['3b305c5c836112101db5e070deaad3a2'].user}}^state=1^parent_objective={{step['ba505c5c836112101db5e070deaad3a8'].first_record}}^EQ</value>
+        <variable display_value="Field values">dd54cf535320220002c6435723dc34fd</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=1cb0189c836112101db5e070deaad30d"/>
+    <sys_element_mapping action="DELETE">
+        <field>enforce_security</field>
+        <id>1cb0189c836112101db5e070deaad30d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 10:06:46</sys_created_on>
+        <sys_id>6a311c9c836112101db5e070deaad362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 10:06:46</sys_updated_on>
+        <table>var__m_atf_input_variable_14872288df60220062fe6c7a4df26319</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>field_values</field>
+        <id>1cb0189c836112101db5e070deaad30d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 10:06:46</sys_created_on>
+        <sys_id>2e311c9c836112101db5e070deaad362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 10:06:46</sys_updated_on>
+        <table>var__m_atf_input_variable_14872288df60220062fe6c7a4df26319</table>
+        <value>due_date=2124-10-25 00:00:00^short_description=My First Task^assigned_to={{step['3b305c5c836112101db5e070deaad3a2'].user}}^state=1^parent_objective={{step['ba505c5c836112101db5e070deaad3a8'].first_record}}^EQ</value>
+    </sys_element_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</application>
+        <file_path/>
+        <instance_id>e768928febe34ed0cbbffceacad0cd08</instance_id>
+        <instance_name>dev279430</instance_name>
+        <name>sys_atf_step_1cb0189c836112101db5e070deaad30d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Insert a record into 'x_snc_pdp_tasks' with the following values:
+Due date = 2124-10-25 00:00:00
+and Short description = My First Task
+and Assigned to = {{Step 4: Impersonate.User}}
+and State = In Progress
+and Parent Objective = {{Step 5: Record Query.First record}}
+Confirm the record was successfully inserted</description><display_name>Record Insert</display_name><inputs/><inputs/><mugshots_cache_json/><notes/><order>8</order><step_config display_value="Record Insert">14872288df60220062fe6c7a4df26319</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-25 10:06:46</sys_created_on><sys_id>1cb0189c836112101db5e070deaad30d</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Record Insert</sys_name><sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package><sys_policy/><sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope><sys_update_name>sys_atf_step_1cb0189c836112101db5e070deaad30d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-25 10:13:15</sys_updated_on><table>x_snc_pdp_tasks</table><test display_value="Create Task Test">11ee841c836112101db5e070deaad358</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=1cb0189c836112101db5e070deaad30d"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>1cb0189c836112101db5e070deaad30d</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-25 10:06:46</sys_created_on><sys_id>26311c9c836112101db5e070deaad363</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-25 10:06:46</sys_updated_on><value>x_snc_pdp_tasks</value><variable display_value="Table">90144b535320220002c6435723dc3488</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>1cb0189c836112101db5e070deaad30d</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-25 10:06:46</sys_created_on><sys_id>62311c9c836112101db5e070deaad363</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-25 10:06:46</sys_updated_on><value>1</value><variable display_value="Enforce security">e6e3c7535320220002c6435723dc3496</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>1cb0189c836112101db5e070deaad30d</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-25 10:06:46</sys_created_on><sys_id>ae311c9c836112101db5e070deaad362</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-25 10:06:46</sys_updated_on><value>record_successfully_inserted</value><variable display_value="Assert type">9024a37f671003007ba405225685efe5</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>1cb0189c836112101db5e070deaad30d</document_key><order>400</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-25 10:06:46</sys_created_on><sys_id>e6311c9c836112101db5e070deaad363</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-25 10:06:46</sys_updated_on><value>due_date=2124-10-25 00:00:00^short_description=My First Task^assigned_to={{step['3b305c5c836112101db5e070deaad3a2'].user}}^state=1^parent_objective={{step['ba505c5c836112101db5e070deaad3a8'].first_record}}^EQ</value><variable display_value="Field values">dd54cf535320220002c6435723dc34fd</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="id=1cb0189c836112101db5e070deaad30d"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>enforce_security</field><id>1cb0189c836112101db5e070deaad30d</id><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-25 10:06:46</sys_created_on><sys_id>6a311c9c836112101db5e070deaad362</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-25 10:06:46</sys_updated_on><table>var__m_atf_input_variable_14872288df60220062fe6c7a4df26319</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>field_values</field><id>1cb0189c836112101db5e070deaad30d</id><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-25 10:06:46</sys_created_on><sys_id>2e311c9c836112101db5e070deaad362</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-25 10:06:46</sys_updated_on><table>var__m_atf_input_variable_14872288df60220062fe6c7a4df26319</table><value>due_date=2124-10-25 00:00:00^short_description=My First Task^assigned_to={{step['3b305c5c836112101db5e070deaad3a2'].user}}^state=1^parent_objective={{step['ba505c5c836112101db5e070deaad3a8'].first_record}}^EQ</value></sys_element_mapping></record_update>]]></payload>
+        <payload_hash>1236317515</payload_hash>
+        <record_name>Record Insert</record_name>
+        <reverted_from/>
+        <source>d20fb1e7831512101db5e070deaad395</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 10:13:15</sys_created_on>
+        <sys_id>19b2945083a112101db5e070deaad345</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192c32a7f6a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 10:13:15</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>9db29450b5a1121066f14d37fd926e44</update_guid>
+        <update_guid_history>9db29450b5a1121066f14d37fd926e44:1236317515,cc62d41021a11210a763d99bcfc0084f:-1230928916,26311c9ceb611210120b9adc9e52b965:596791949</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 10:13:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>c7774221cd39447680e3dea744a42ee4</sys_id>
+        <sys_metadata>1cb0189c836112101db5e070deaad30d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Insert</sys_name>
+        <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
+        <sys_scope_delete display_value="">04ce840f634c49f089a912df505ad044</sys_scope_delete>
+        <sys_update_name>sys_atf_step_1cb0189c836112101db5e070deaad30d</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_1cb0189c836112101db5e070deaad30d">19b2945083a112101db5e070deaad345</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 10:13:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
