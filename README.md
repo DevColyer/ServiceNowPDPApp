@@ -20,7 +20,7 @@ Access to a ServiceNow instance. If you do not have access to an instance, free 
 - Ensure the HTTPS protocol is selected, then enter the URL for your Github repository and select the credential you just created. All other fields can be left with default values.
 - Click **Import**.
 
-This process should set up the bulk of the application. However, some data is not backed up to source control automatically in ServiceNow so it is necessary to apply this data, which is found in the **enter directory** directory. For each XML file in that directory, apply the data to the instance as follows:
+This process should set up the bulk of the application. However, some data is not backed up to source control automatically in ServiceNow so it is necessary to apply this data, which is found in the [**data directory**](data/). For each XML file in that directory, apply the data to the instance as follows:
 
 - Ensure you are logged in as System Administrator and in the **Personal Development Planner** application scope.
 - With any list view open, open the context menu for any column and select **Import XML**.
