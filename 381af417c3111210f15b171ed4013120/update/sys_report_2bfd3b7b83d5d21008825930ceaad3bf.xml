@@ -27,7 +27,7 @@
         <chart_title_x_position>0</chart_title_x_position>
         <chart_title_y_position>0</chart_title_y_position>
         <chart_width>600</chart_width>
-        <color/>
+        <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
         <column/>
@@ -48,7 +48,8 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>active</field>
         <field_list>number,priority,state,assigned_to,short_description,sys_class_name</field_list>
-        <filter/>
+        <filter table="x_snc_pdp_tasks">state=1<item display_value="In Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+        </filter>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{"$COUNT_FIELD$,AGGREGATION":{"decimalPrecision":2,"groupingUsed":true,"roundingMode":"HALF_UP","metricPrefixSymbolUsed":false,"showOriginalNumberInTooltip":true,"addValueInTooltip":true}}}</formatting_configuration>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -108,14 +109,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-24 14:04:14</sys_created_on>
         <sys_id>2bfd3b7b83d5d21008825930ceaad3bf</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Students with tasks in progress</sys_name>
         <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
         <sys_policy/>
         <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
         <sys_update_name>sys_report_2bfd3b7b83d5d21008825930ceaad3bf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-24 14:22:15</sys_updated_on>
+        <sys_updated_on>2024-10-25 12:20:13</sys_updated_on>
         <table>x_snc_pdp_tasks</table>
         <title>Students with tasks in progress</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

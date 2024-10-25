@@ -3,22 +3,22 @@
         <dashboard display_value="Resourcing PDP Overview">c60bbfb783d5d21008825930ceaad3ad</dashboard>
         <home>false</home>
         <homepage/>
-        <order>1</order>
+        <order>2</order>
         <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-10-24 13:51:35</sys_created_on>
+        <sys_created_on>2024-10-25 12:03:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>9e1bffb783d5d21008825930ceaad3f8</sys_id>
+        <sys_id>87ebe45c83ad161008825930ceaad303</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>c60bbfb783d5d21008825930ceaad3ad</sys_name>
         <sys_overrides/>
         <sys_package display_value="Personal Development Planner" source="x_snc_pdp">381af417c3111210f15b171ed4013120</sys_package>
         <sys_policy/>
         <sys_scope display_value="Personal Development Planner">381af417c3111210f15b171ed4013120</sys_scope>
-        <sys_update_name>pa_m2m_dashboard_tabs_9e1bffb783d5d21008825930ceaad3f8</sys_update_name>
+        <sys_update_name>pa_m2m_dashboard_tabs_87ebe45c83ad161008825930ceaad303</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-24 13:51:35</sys_updated_on>
-        <tab display_value="0a1bffb783d5d21008825930ceaad3ef&#7;Students">0a1bffb783d5d21008825930ceaad3ef</tab>
+        <sys_updated_on>2024-10-25 12:03:24</sys_updated_on>
+        <tab display_value="Trainers">03eba45c83ad161008825930ceaad3ee</tab>
     </pa_m2m_dashboard_tabs>
 </record_update>
